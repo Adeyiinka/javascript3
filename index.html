@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculator(divide) {
+            let obj=[];
+                for ( let i = 1; i <= divide; i++){
+                    if  (i % 2 == 0 && i % 3 == 0 && i %   5 == 0){
+                        obj.push("yu-gi-oh")
+                    }  else if (i % 2 == 0 && i % 3 == 0){
+                        obj.push("yu-gi")
+                    }  else if (i % 2 == 0 && i % 5 == 0){
+                        obj.push("yu-oh")
+                    }  else if (i % 3 == 0 && i % 5 == 0){
+                        obj.push("gi-oh")
+                    }  else if (i % 2 == 0){
+                        obj.push("yu")
+                    }  else if (i % 3 == 0) {
+                        obj.push("gi")
+                    }  else if (i % 5 == 0){
+                        obj.push("oh")
+                    }  else {
+                        obj.push(i)
+                    }
+                }    
+                console.log(obj);
+                return obj;
+        }
+        calculator(100);
+        calculator(70);
+    </script>
+</body>
+</html>
